@@ -7,6 +7,50 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <header id="header">
+        <h1 id="title">Compartilhe seu gênero favorite de jogo.</h1>
+        <p id="description">Como amantes de jogos, temos aquele tipo favorito. Compartilhe o seu!! :D</p>
+    </header>
+
+    <div id="main">
+        <form id=survey-form>
+            <label for="name" id="name-label">Name </label>
+            <input id="name" type="text" required placeholder="Coloque seu nome" />
+            <br>
+            <label for="email" id="email-label">E-mail</label>
+            <input id="email" type="email" required placeholder="Coloque seu E-mail" />
+            <br>
+            <label for="number" id="number-label">Age (optional)</label>
+            <input id="number" type="number" min="12" max="100" placeholder="Idade" />
+            <br>
+            <label for="dropdown" id="dropdown-label">Selecione seu gênero/sub favorito!</label>
+            <select id="dropdown">
+                <option>Gênero</option>
+                <option>RPG</option>
+                <option>MMORPG</option>
+                <option>MOBA</option>
+                <option>FPS</option>
+                <option>Metroidvania</option>
+            </select>
+            <br>
+            <label for="which-one">Qual você prefere ?</label>
+            <br>
+            <input type="radio" name="which-one" value="console" />Console
+            <input type="radio" name="which-one" value="pc" />PC
+            <input type="radio" name="which-one" value="ambos-console" />Ambos
+            <br>
+            <label for="which">Qual prefere ?</label>
+            <br>
+            <input type="checkbox" name="which" value="controle">Controle
+            <input type="checkbox" name="which" value="teclado">Teclado
+            <input type="checkbox" name="which" value="ambos-controle">Ambos
+            <br>
+            <label>Opine</label><br>
+            <textarea> placeholder="Sua opnião sobre o formulario"</textarea>
+            <br>
+            <button type="submit" id="submit">Enviar</button>
+        </form>
+    <div>
 </body>
 </html>
