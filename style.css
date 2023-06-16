@@ -7,6 +7,7 @@
 
 :root {
     --bg-color: #0e0032;
+    --bg-image: url(assets/game-background.jpg);
     --bg-buttom-color: rgb(79, 30, 193);
     --title-color: #b6e0de;
     --text-color: #659e98;
@@ -25,7 +26,7 @@ html {
 
 /*imagem de fundo*/
 body {
-    background: #03002B url(assets/game-background.jpg) no-repeat;
+    background: #03002B var(--bg-image) no-repeat;
     background-size: cover;
     color: white;
 
