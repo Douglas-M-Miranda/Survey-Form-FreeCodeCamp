@@ -7,50 +7,71 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header id="header">
+    <!--Titulo-->
+    <header id="header-title">
         <h1 id="title">Compartilhe seu gênero favorite de jogo.</h1>
         <p id="description">Como amantes de jogos, temos aquele tipo favorito. Compartilhe o seu!! :D</p>
     </header>
-
+ 
+    <!--formulario-->
     <div id="main">
         <form id=survey-form>
-            <label for="name" id="name-label">Name </label>
-            <input id="name" type="text" required placeholder="Coloque seu nome" />
+            <!--Area do nome/email/idade-->
+            <div class="name-info">
+                <label for="name" id="name-label">Name </label>
+                <input id="name" type="text" required placeholder="Coloque seu nome" />
+                <br>
+                <label for="email" id="email-label">E-mail</label>
+                <input id="email" type="email" required placeholder="Coloque seu E-mail" />
+                <br>
+                <label for="number" id="number-label">Age (optional)</label>
+                <input id="number" type="number" min="12" max="100" placeholder="Idade" />
+                <br>
+            </div>
+            <!--Area do gênero favorito-->
+            <div class="favorite-type">
+                <label for="dropdown" id="dropdown-label">Selecione seu gênero/sub favorito!</label>
+                <select id="dropdown">
+                    <option>Gênero</option>
+                    <option>RPG</option>
+                    <option>MMORPG</option>
+                    <option>MOBA</option>
+                    <option>FPS</option>
+                    <option>Metroidvania</option>
+                </select>
+            </div>
             <br>
-            <label for="email" id="email-label">E-mail</label>
-            <input id="email" type="email" required placeholder="Coloque seu E-mail" />
-            <br>
-            <label for="number" id="number-label">Age (optional)</label>
-            <input id="number" type="number" min="12" max="100" placeholder="Idade" />
-            <br>
-            <label for="dropdown" id="dropdown-label">Selecione seu gênero/sub favorito!</label>
-            <select id="dropdown">
-                <option>Gênero</option>
-                <option>RPG</option>
-                <option>MMORPG</option>
-                <option>MOBA</option>
-                <option>FPS</option>
-                <option>Metroidvania</option>
-            </select>
-            <br>
-            <label for="which-one">Qual você prefere ?</label>
-            <br>
-            <input type="radio" name="which-one" value="console" />Console
-            <input type="radio" name="which-one" value="pc" />PC
-            <input type="radio" name="which-one" value="ambos-console" />Ambos
-            <br>
-            <label for="which">Qual prefere ?</label>
-            <br>
-            <input type="checkbox" name="which" value="controle">Controle
-            <input type="checkbox" name="which" value="teclado">Teclado
-            <input type="checkbox" name="which" value="ambos-controle">Ambos
-            <br>
-            <label>Opine</label><br>
-            <textarea> placeholder="Sua opnião sobre o formulario"</textarea>
-            <br>
+            <!--Area do console vs pc-->
+            <div class="console-vs-pc">
+                <label for="which-one">Qual você prefere ?</label>
+                <br>
+                <input type="radio" name="which-one" value="console" />Console
+                <br>
+                <input type="radio" name="which-one" value="pc" />PC
+                <br>
+                <input type="radio" name="which-one" value="ambos-console" />Ambos
+                <br>
+            </div>
+            <!--Area do controle vs teclado-->
+            <div class="controle-vs-teclado">
+                <label for="which">Qual prefere ?</label>
+                <br>
+                <input type="checkbox" name="which" value="controle">Controle
+                <br>
+                <input type="checkbox" name="which" value="teclado">Teclado
+                <br>
+                <input type="checkbox" name="which" value="ambos-controle">Ambos
+                <br>
+            <div class="opine">
+                <label>Opine</label><br>
+                <textarea placeholder="Sua opnião sobre o formulario"></textarea>
+                <br>
+            </div>
+            </div>
+            <!--Area do textãooo-->
             <button type="submit" id="submit">Enviar</button>
         </form>
     <div>
+
 </body>
 </html>

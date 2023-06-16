@@ -1,0 +1,131 @@
+/*formatação geral da página*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap');
+@font-face {
+    font-family: pixel;
+    src: url(assets/PressStart2P-Regular.ttf);
+ }
+
+:root {
+    --bg-color: #0e0032;
+    --bg-buttom-color: rgb(79, 30, 193);
+    --title-color: #b6e0de;
+    --text-color: #659e98;
+    --title-font: pixel;
+    --text-font: 'Inter', sans-serif;
+}
+
+html {
+    font-size: 10px;
+ }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*imagem de fundo*/
+body {
+    background: #03002B url(assets/game-background.jpg) no-repeat;
+    background-size: cover;
+    color: white;
+
+    font-family: var(--text-font);
+}
+
+/*titlo*/
+#header-title {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#title {
+    font-family: var(--title-font);
+    font-size: 2.5rem;
+    color: var(--title-color);
+}
+
+#description {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: var(--text-color);
+    margin: 0.6rem 0 3rem 0;
+} 
+
+/*formatação do formulario*/
+#main {
+    background-color: var(--bg-color);
+    opacity: 0.94;
+    width: 45%;
+    height: 100%;
+    margin: auto;
+
+    border-radius: 20px;
+}
+
+#survey-form {
+    font-size: 2rem;
+    padding: 1.7rem 1.7rem 1.7rem 2.5rem; 
+}
+
+.name-info input {
+    display: block;
+    width: 98%;
+    height: 2.5rem;
+    margin-top: 0.3rem;
+}
+
+.name-info input::placeholder {
+    padding-left: 0.4rem;
+}
+
+.favorite-type select {
+    display: block;
+    width: 99%;
+    height: 2.9rem;
+    margin-top: 0.3rem;
+}
+
+.console-vs-pc input {
+    margin-right: 1.1rem;
+}
+
+.controle-vs-teclado {
+    margin-top: 1.5rem;
+}
+
+.controle-vs-teclado input {
+    margin-right: 1.1rem;
+}
+
+.opine {
+    margin-top: 1.1rem;
+}
+
+.opine textarea {
+    width: 99.5%;
+    height: 9rem;
+}
+
+.opine textarea::placeholder {
+    padding: 0.7rem;
+}
+
+button {
+    width: 99.9%; 
+    height: 4rem;
+    margin-top: 1.5rem;
+    text-align: center;
+
+    font-size: 2rem;
+    border-radius: 6px;
+    background-color: var(--bg-buttom-color);
+    color: white;
+    border: 1px white solid;
+}
+
+@media (max-width: 722px) {
+    #main {
+        width: 100%;
+    }
+}
